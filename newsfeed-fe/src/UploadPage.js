@@ -28,10 +28,10 @@ export default function Upload() {
    */
   const handleSubmit = async () => {
     if (
-      title === "" ||
-      description === "" ||
-      category === "" ||
-      location === "" ||
+      title === "" &&
+      description === "" &&
+      category === "" &&
+      location === "" &&
       coverImage === ""
     ) {
       error("Please, all the fields are required!");
@@ -114,21 +114,21 @@ export default function Upload() {
         <div className="mt-5 mr-10 flex  justify-end">
           <div className="flex items-center">
             <button
-              className="bg-transparent  dark:text-[#9CA3AF] py-2 px-6 border rounded-lg  border-gray-600  mr-6"
+              onClick={() => {
+                handleSubmit();
+              }}
+              className="bg-orange-400 hover:bg-orange-500 text-white py-2 rounded-lg flex px-4 justify-between flex-row items-center mr-6"
+            >
+              <BiCloud />
+              <p className="ml-2">Upload</p>
+            </button>
+            <button
+              className="bg-transparent  dark:text-[#9CA3AF] py-2 px-6 border rounded-lg  border-gray-600 "
               onClick={() => {
                 goBack();
               }}
             >
               Discard
-            </button>
-            <button
-              onClick={() => {
-                handleSubmit();
-              }}
-              className="bg-blue-500 hover:bg-blue-700 text-white py-2 rounded-lg flex px-4 justify-between flex-row items-center"
-            >
-              <BiCloud />
-              <p className="ml-2">Upload</p>
             </button>
           </div>
         </div>

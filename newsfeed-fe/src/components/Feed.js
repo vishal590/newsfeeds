@@ -38,14 +38,7 @@ export default function Feed({ feed }) {
           >
             <AiFillLinkedin />
           </a>
-          <a
-            className="bg-transparent dark:text-[#9CA3AF] py-2 px-6 border rounded-lg border-red-600 mr-6 text-red-600 hover:bg-red-600 hover:text-white"
-            href={`https://www.reddit.com/submit?url=https://ipfs.infura.io/ipfs/${feed.coverImageHash}&title=${feed.title}`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <AiFillRedditCircle />
-          </a>
+          
         </div>
       </div>
 
@@ -59,3 +52,5 @@ export default function Feed({ feed }) {
     </div>
   );
 }
+
+

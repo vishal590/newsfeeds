@@ -24,16 +24,16 @@ export default function FeedList({ horizontal, feed }) {
           {feed.title}
         </h4>
         {horizontal && (
-          <p className="text-sm flex items-center text-textSubTitle mt-1">
+          <p className="text-sm flex items-center text-orange-400 text-textSubTitle mt-1">
             {feed.category}
           </p>
         )}
         {horizontal && (
-          <p className="text-sm flex items-center text-textSubTitle mt-1">
+          <p className="text-sm flex items-center text-orange-400 text-textSubTitle mt-1">
             {feed.description.slice(0, 30)}...
           </p>
         )}
-        <p className="text-sm flex items-center text-textSubTitle mt-1">
+        <p className="text-sm flex items-center text-orange-400 text-textSubTitle mt-1">
           {horizontal ? null : feed.category + " • "}
           {feed?.author?.slice(0, 12)}...{" "}
           <BiCheck size="20px" color="green" className="ml-1" />

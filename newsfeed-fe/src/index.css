@@ -4,10 +4,10 @@
 @tailwind utilities;
 
 body {
-  background-color: rgb(224, 247, 229);
+  background-color: #E4E4E4;
   color: #333;
 }
 
 #root {
-  background-color: rgb(224, 247, 229);
+  background-color: #E4E4E4;
 }

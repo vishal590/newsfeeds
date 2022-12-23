@@ -107,7 +107,7 @@ export default function FeedPage() {
             <h4 className="text-xl font-bold dark:text-white ml-5 mb-3 text-black">
               Related Feeds
               <Link to="/">
-                <button className="bg-red-600 hover:bg-red-800 text-white font-bold px-2 rounded ml-10">
+                <button className="bg-orange-400 hover:bg-red-600 text-white font-bold px-2 rounded ml-10">
                   Go Back
                 </button>
               </Link>
@@ -130,3 +130,4 @@ export default function FeedPage() {
     </div>
   );
 }
+

@@ -96,6 +96,7 @@ export default function Main() {
     }
   };
 
+ 
   /*
    * This runs our function when the page loads.
    */
@@ -158,11 +159,11 @@ export default function Main() {
           connectWallet={connectWallet}
           ToastContainer={ToastContainer}
         />
-        <div className="flex-1 flex flex-row flex-wrap">
+        <div className="flex-1 flex flex-row flex-wrap justify-around">
           {feeds.map((feed, index) => {
             return (
               <Link to={`/feed?id=${feed.id}`} key={index}>
-                <div className="w-80 h-80 m-2">
+                <div className="w-96 h-96 m-1">
                   <FeedList feed={feed} />
                 </div>
               </Link>
